@@ -1,0 +1,86 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: #e6e5e5;
+  color: #151313;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+h1{
+  color: #312a2a;
+  font-family: Helvetica, sans-serif;
+  font-size: 42px;
+  margin-top: 10px;
+}
+.calculator{
+  background-color:#4b4a4a;
+  width: 400px;
+  height: 80vh;
+  margin: 1em auto;
+  padding: 22px 12px 12px;
+  border: 2px solid #121111;
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.display{
+  background-color: #1f5858;
+  color:#faebd7;
+  height: 100px;
+  border-radius: 5px;
+  word-wrap:break-word;
+  word-break:break-all;
+  position: relative;
+  overflow: hidden;
+}
+.previous{
+  font-size: 24px;
+  margin-top: 0px;
+  padding-right: 5px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.current{
+  font-size:42px;
+  margin-bottom: 0px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.buttons,
+.display{
+  width: 100%;
+}
+.buttons{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 8px;
+}
+.button{
+  color: inherit;
+  cursor: pointer;
+  font-size: 2rem;
+  padding: 10px;
+  border-radius: 5px;
+  border:2px solid #121111;
+}
+.button.span-two{
+  grid-column: span 2;
+}
+.blue{
+  background-color:rgba(29, 101, 235, 0.623);
+}
+.button:hover{
+  background-color:#b5b3b3;
+}
